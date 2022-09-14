@@ -13,11 +13,11 @@ services:
         value: 12.22.0
       - key: NODE_ENV
         value: production
-      - key: process.env.CLOUDINARY_NAME
+      - key: CLOUDINARY_NAME
         sync: false
-      - key: process.env.CLOUDINARY_KEY
+      - key: CLOUDINARY_KEY
         sync: false
-      - key: process.env.CLOUDINARY_SECRET
+      - key: CLOUDINARY_SECRET
         sync: false
       - key: DATABASE_URL
         fromDatabase:
