@@ -1,5 +1,5 @@
 {
-  "/prospects": {
+  "/activities": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectListResponse"
+                "$ref": "#/components/schemas/ActivityListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [
         {
@@ -159,7 +159,7 @@
           "style": "deepObject"
         }
       ],
-      "operationId": "get/prospects"
+      "operationId": "get/activities"
     },
     "post": {
       "responses": {
@@ -168,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/ActivityResponse"
               }
             }
           }
@@ -225,23 +225,23 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [],
-      "operationId": "post/prospects",
+      "operationId": "post/activities",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/ActivityRequest"
             }
           }
         }
       }
     }
   },
-  "/prospects/{id}": {
+  "/activities/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -249,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/ActivityResponse"
               }
             }
           }
@@ -306,7 +306,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [
         {
@@ -320,7 +320,7 @@
           }
         }
       ],
-      "operationId": "get/prospects/{id}"
+      "operationId": "get/activities/{id}"
     },
     "put": {
       "responses": {
@@ -329,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/ActivityResponse"
               }
             }
           }
@@ -386,7 +386,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [
         {
@@ -400,13 +400,13 @@
           }
         }
       ],
-      "operationId": "put/prospects/{id}",
+      "operationId": "put/activities/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/ActivityRequest"
             }
           }
         }
@@ -477,7 +477,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [
         {
@@ -491,10 +491,10 @@
           }
         }
       ],
-      "operationId": "delete/prospects/{id}"
+      "operationId": "delete/activities/{id}"
     }
   },
-  "/prospects/{id}/localizations": {
+  "/activities/{id}/localizations": {
     "post": {
       "responses": {
         "200": {
@@ -502,7 +502,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectLocalizationResponse"
+                "$ref": "#/components/schemas/ActivityLocalizationResponse"
               }
             }
           }
@@ -559,7 +559,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Activity"
       ],
       "parameters": [
         {
@@ -573,13 +573,13 @@
           }
         }
       ],
-      "operationId": "post/prospects/{id}/localizations",
+      "operationId": "post/activities/{id}/localizations",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectLocalizationRequest"
+              "$ref": "#/components/schemas/ActivityLocalizationRequest"
             }
           }
         }

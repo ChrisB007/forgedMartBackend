@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "valuations",
+  "info": {
+    "singularName": "valuation",
+    "pluralName": "valuations",
+    "displayName": "Valuation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand_name": {
+      "type": "string"
+    },
+    "cash": {
+      "type": "integer"
+    },
+    "net_income": {
+      "type": "decimal"
+    },
+    "depreciation": {
+      "type": "decimal",
+      "required": true
+    },
+    "amortization": {
+      "type": "decimal",
+      "required": true
+    },
+    "debt": {
+      "type": "decimal"
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    },
+    "interest": {
+      "type": "decimal",
+      "required": true
+    },
+    "taxes": {
+      "type": "decimal",
+      "required": true
+    },
+    "market_cap": {
+      "type": "integer"
+    },
+    "minority": {
+      "type": "string",
+      "required": true
+    },
+    "preferred_shares": {
+      "type": "string",
+      "required": true
+    },
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "United. States",
+        "Canada",
+        "Mexico",
+        "United Kingdom",
+        "Germany",
+        "Australia",
+        "France"
+      ],
+      "required": true,
+      "default": "United. States"
+    }
+  }
+}

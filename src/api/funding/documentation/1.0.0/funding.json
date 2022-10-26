@@ -1,5 +1,5 @@
 {
-  "/prospects": {
+  "/fundings": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectListResponse"
+                "$ref": "#/components/schemas/FundingListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [
         {
@@ -159,7 +159,7 @@
           "style": "deepObject"
         }
       ],
-      "operationId": "get/prospects"
+      "operationId": "get/fundings"
     },
     "post": {
       "responses": {
@@ -168,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/FundingResponse"
               }
             }
           }
@@ -225,23 +225,23 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [],
-      "operationId": "post/prospects",
+      "operationId": "post/fundings",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/FundingRequest"
             }
           }
         }
       }
     }
   },
-  "/prospects/{id}": {
+  "/fundings/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -249,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/FundingResponse"
               }
             }
           }
@@ -306,7 +306,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [
         {
@@ -320,7 +320,7 @@
           }
         }
       ],
-      "operationId": "get/prospects/{id}"
+      "operationId": "get/fundings/{id}"
     },
     "put": {
       "responses": {
@@ -329,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/FundingResponse"
               }
             }
           }
@@ -386,7 +386,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [
         {
@@ -400,13 +400,13 @@
           }
         }
       ],
-      "operationId": "put/prospects/{id}",
+      "operationId": "put/fundings/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/FundingRequest"
             }
           }
         }
@@ -477,7 +477,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [
         {
@@ -491,10 +491,10 @@
           }
         }
       ],
-      "operationId": "delete/prospects/{id}"
+      "operationId": "delete/fundings/{id}"
     }
   },
-  "/prospects/{id}/localizations": {
+  "/fundings/{id}/localizations": {
     "post": {
       "responses": {
         "200": {
@@ -502,7 +502,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectLocalizationResponse"
+                "$ref": "#/components/schemas/FundingLocalizationResponse"
               }
             }
           }
@@ -559,7 +559,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Funding"
       ],
       "parameters": [
         {
@@ -573,13 +573,13 @@
           }
         }
       ],
-      "operationId": "post/prospects/{id}/localizations",
+      "operationId": "post/fundings/{id}/localizations",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectLocalizationRequest"
+              "$ref": "#/components/schemas/FundingLocalizationRequest"
             }
           }
         }

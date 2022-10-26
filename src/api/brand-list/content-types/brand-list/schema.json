@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_lists",
+  "info": {
+    "singularName": "brand-list",
+    "pluralName": "brand-lists",
+    "displayName": "Brand_List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Num_of_stores": {
+      "type": "integer",
+      "required": false
+    },
+    "Contact": {
+      "type": "email"
+    }
+  }
+}

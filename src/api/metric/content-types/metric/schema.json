@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metrics",
+  "info": {
+    "singularName": "metric",
+    "pluralName": "metrics",
+    "displayName": "Metrics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currentRetailStores": {
+      "type": "integer",
+      "required": true,
+      "default": 96
+    },
+    "currentOrders": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "currentValuation": {
+      "type": "integer",
+      "required": true
+    },
+    "brandInStores": {
+      "type": "integer"
+    },
+    "prevOrders": {
+      "type": "integer"
+    },
+    "prevValuation": {
+      "type": "integer"
+    },
+    "prevRetailStores": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

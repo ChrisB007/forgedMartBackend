@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agency_signups",
+  "info": {
+    "singularName": "agency-signup",
+    "pluralName": "agency-signups",
+    "displayName": "AgencySignup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "company": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "clients": {
+      "type": "integer"
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "United States",
+        "Canada",
+        "Mexico",
+        "United Kingdom",
+        "Australia",
+        "Germany",
+        "France"
+      ]
+    },
+    "plan": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exit_strategies",
+  "info": {
+    "singularName": "exit-strategy",
+    "pluralName": "exit-strategies",
+    "displayName": "Exit",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand_name": {
+      "type": "string",
+      "required": true
+    },
+    "advisory_team": {
+      "type": "text",
+      "required": true
+    },
+    "transition_plan": {
+      "type": "enumeration",
+      "enum": [
+        "Yes",
+        "No"
+      ]
+    },
+    "exitplans": {
+      "type": "enumeration",
+      "enum": [
+        "As soon as Possible",
+        "Within six months",
+        "In a year",
+        "In Two Years"
+      ]
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    },
+    "about": {
+      "type": "text",
+      "required": true
+    },
+    "transition_structure": {
+      "type": "enumeration",
+      "enum": [
+        "No",
+        "Yes"
+      ]
+    },
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "United States",
+        "Canada",
+        "Mexico",
+        "United Kingdom",
+        "Germany",
+        "Australia",
+        "France"
+      ]
+    }
+  }
+}

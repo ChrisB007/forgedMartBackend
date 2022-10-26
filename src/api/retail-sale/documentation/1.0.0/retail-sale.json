@@ -1,5 +1,5 @@
 {
-  "/prospects": {
+  "/retail-sales": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectListResponse"
+                "$ref": "#/components/schemas/RetailSaleListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [
         {
@@ -159,7 +159,7 @@
           "style": "deepObject"
         }
       ],
-      "operationId": "get/prospects"
+      "operationId": "get/retail-sales"
     },
     "post": {
       "responses": {
@@ -168,7 +168,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/RetailSaleResponse"
               }
             }
           }
@@ -225,23 +225,23 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [],
-      "operationId": "post/prospects",
+      "operationId": "post/retail-sales",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/RetailSaleRequest"
             }
           }
         }
       }
     }
   },
-  "/prospects/{id}": {
+  "/retail-sales/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -249,7 +249,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/RetailSaleResponse"
               }
             }
           }
@@ -306,7 +306,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [
         {
@@ -320,7 +320,7 @@
           }
         }
       ],
-      "operationId": "get/prospects/{id}"
+      "operationId": "get/retail-sales/{id}"
     },
     "put": {
       "responses": {
@@ -329,7 +329,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectResponse"
+                "$ref": "#/components/schemas/RetailSaleResponse"
               }
             }
           }
@@ -386,7 +386,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [
         {
@@ -400,13 +400,13 @@
           }
         }
       ],
-      "operationId": "put/prospects/{id}",
+      "operationId": "put/retail-sales/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectRequest"
+              "$ref": "#/components/schemas/RetailSaleRequest"
             }
           }
         }
@@ -477,7 +477,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [
         {
@@ -491,10 +491,10 @@
           }
         }
       ],
-      "operationId": "delete/prospects/{id}"
+      "operationId": "delete/retail-sales/{id}"
     }
   },
-  "/prospects/{id}/localizations": {
+  "/retail-sales/{id}/localizations": {
     "post": {
       "responses": {
         "200": {
@@ -502,7 +502,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProspectLocalizationResponse"
+                "$ref": "#/components/schemas/RetailSaleLocalizationResponse"
               }
             }
           }
@@ -559,7 +559,7 @@
         }
       },
       "tags": [
-        "Prospect"
+        "Retail-sale"
       ],
       "parameters": [
         {
@@ -573,13 +573,13 @@
           }
         }
       ],
-      "operationId": "post/prospects/{id}/localizations",
+      "operationId": "post/retail-sales/{id}/localizations",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/ProspectLocalizationRequest"
+              "$ref": "#/components/schemas/RetailSaleLocalizationRequest"
             }
           }
         }

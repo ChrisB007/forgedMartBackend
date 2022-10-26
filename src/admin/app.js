@@ -1,4 +1,13 @@
+import AuthLogo from "./extensions/logo.png";
+import favicon from "./extensions/favicon.ico";
+
 const config = {
+  auth: {
+    logo: AuthLogo,
+  },
+  head: {
+    favicon: favicon,
+  },
   locales: [
     // 'ar',
     // 'fr',
