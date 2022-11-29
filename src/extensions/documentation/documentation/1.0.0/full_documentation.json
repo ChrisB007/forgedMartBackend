@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-10-26T17:00:26.350Z"
+    "x-generation-date": "2022-11-29T16:18:44.847Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -23793,6 +23793,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -24355,6 +24363,14 @@
                                               }
                                             }
                                           }
+                                        },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
                                         },
                                         "createdAt": {
                                           "type": "string",
@@ -24952,6 +24968,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -25515,6 +25539,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -25849,6 +25881,14 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "user_role": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "Brand",
+                                                          "Agency",
+                                                          "Ambassador"
+                                                        ]
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -26441,6 +26481,14 @@
                                                             }
                                                           }
                                                         }
+                                                      },
+                                                      "user_role": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "Brand",
+                                                          "Agency",
+                                                          "Ambassador"
+                                                        ]
                                                       },
                                                       "createdAt": {
                                                         "type": "string",
@@ -27067,6 +27115,14 @@
                                                           }
                                                         }
                                                       },
+                                                      "user_role": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "Brand",
+                                                          "Agency",
+                                                          "Ambassador"
+                                                        ]
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -27659,6 +27715,14 @@
                                                           }
                                                         }
                                                       },
+                                                      "user_role": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                          "Brand",
+                                                          "Agency",
+                                                          "Ambassador"
+                                                        ]
+                                                      },
                                                       "createdAt": {
                                                         "type": "string",
                                                         "format": "date-time"
@@ -28141,7 +28205,8 @@
           "data": {
             "required": [
               "username",
-              "email"
+              "email",
+              "user_role"
             ],
             "type": "object",
             "properties": {
@@ -28182,6 +28247,14 @@
                   }
                 ],
                 "example": "string or id"
+              },
+              "user_role": {
+                "type": "string",
+                "enum": [
+                  "Brand",
+                  "Agency",
+                  "Ambassador"
+                ]
               }
             }
           }
@@ -28626,6 +28699,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -28722,6 +28803,14 @@
                     }
                   }
                 }
+              },
+              "user_role": {
+                "type": "string",
+                "enum": [
+                  "Brand",
+                  "Agency",
+                  "Ambassador"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -29208,6 +29297,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -29304,6 +29401,14 @@
                     }
                   }
                 }
+              },
+              "user_role": {
+                "type": "string",
+                "enum": [
+                  "Brand",
+                  "Agency",
+                  "Ambassador"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -29823,6 +29928,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -29919,6 +30032,14 @@
                     }
                   }
                 }
+              },
+              "user_role": {
+                "type": "string",
+                "enum": [
+                  "Brand",
+                  "Agency",
+                  "Ambassador"
+                ]
               },
               "createdAt": {
                 "type": "string",
@@ -30405,6 +30526,14 @@
                                             }
                                           }
                                         },
+                                        "user_role": {
+                                          "type": "string",
+                                          "enum": [
+                                            "Brand",
+                                            "Agency",
+                                            "Ambassador"
+                                          ]
+                                        },
                                         "createdAt": {
                                           "type": "string",
                                           "format": "date-time"
@@ -30501,6 +30630,14 @@
                     }
                   }
                 }
+              },
+              "user_role": {
+                "type": "string",
+                "enum": [
+                  "Brand",
+                  "Agency",
+                  "Ambassador"
+                ]
               },
               "createdAt": {
                 "type": "string",
